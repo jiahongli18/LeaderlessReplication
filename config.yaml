@@ -1,0 +1,13 @@
+numservers: 2
+numfailures: 1
+# servers:
+#   - {
+#     id: 0,
+#     port: 3000
+#   }
+#   {
+#     id: 1,
+#     port: 3001
+#   }
+
+
