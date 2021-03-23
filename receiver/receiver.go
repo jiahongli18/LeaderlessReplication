@@ -48,6 +48,8 @@ func ServerListen(port string, nodes map[string]net.Conn) {
 	dec := gob.NewDecoder(c) // read from the channel
 	dec.Decode(&ID)
 	nodes[ID] = c
+
+	// fmt.Println(ID, c)
 	l.Close()
 }
 

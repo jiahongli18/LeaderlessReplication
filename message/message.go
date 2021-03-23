@@ -1,4 +1,4 @@
-package Message
+package message
 
 import "time"
 
@@ -16,4 +16,10 @@ type SSMessage struct {
 
 type ACK struct {
 	ack int
+}
+
+//added this cuz it was throwing an error
+type Message struct {
+	State float64
+	Round int
 }
