@@ -8,9 +8,6 @@ import (
 	"log"
 	"net"
 	"os"
-
-	// "time"
-
 	"gopkg.in/yaml.v2"
 )
 
@@ -88,17 +85,13 @@ func main() {
 		receiver.ServerListen(port, nodes)
 	}
 
-	// time.Sleep(time.Duration(2) * time.Second)
 
-	for i := 0; i <= 2; i++ {
-		if i != ID {
+	for i := 0; i < ID; i++ {
 			fmt.Println("dialing: ", i)
 			// sender.Dial(i, ID, IDs, IPs, ports, nodes)
 			sender.Dial(i, ID, nodes)
-		}
 	}
 
-	// Using configuration data, connect all the servers to each other
 	// for {
 	//   // loop through c.Servers and c
 	//   // N - f
